@@ -73,15 +73,18 @@ Endpoint |HTTP Method | CRUD Method | Nombre del Servicio| Cuerpo | Resultado
 ```
 	Cuerpo "(A)": 
 	{
-	"id_pokemons": 93,
-	"nick_name": "Pedro",
-	"is_party_member": true
+		"id_pokemons": 93,
+		"nick_name": "Pedro",
+		"is_party_member": true
 	}
 ```
 ```
 	Cuerpo "(B)"
 	{
-	"nick_name": "Timmy"
+		"nick_name": "Timmy"
 	}
 ```
 
+## Utilidades
+
+En la carpeta Utils_BD se encuentra el Diagrama de Entidad Relacion en dos formatos .png y html. Para visualizar el html debe ingresar en la carpeta "DiagramaER_HTML" y abrir el archivo "index.html" en el cual se proporciona ademas del Diagrama Entidad Relacion una visualización de las tablas con los tipos de datos de los campos y cuales son requeridos.
