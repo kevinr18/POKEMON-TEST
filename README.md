@@ -1,0 +1,60 @@
+# PRUEBA PRÁCTICA - DjangoREST
+
+## Requerimientos
+- Python 3.7.7
+- Django==3.0.7
+- djangorestframework==3.11.0
+- django-cors-headers==3.3.0
+- psycopg2==2.8.5
+- PostgreSQL == 11
+
+De igual forma se tienen todas las depedencias en el entorno virutal (pokemonEnv)
+
+## Instalación
+```
+	Paso 1) Clonar el repositorio "https://github.com/kevinr18/POKEMON-TEST" rama master.
+	paso 2) Activar el entorno Virutal: 
+			a) Abra la consola de comandos y ubiquese en la ruta del proyecto
+			b) Escriba pokemonEnv\Scripts\Activate
+	paso 3) Instalando la Base de Datos:
+			a) Descargue e Instale la Base de datos PostgreSQL de la pagina oficial de acuerdo a su S.O https://www.postgresql.org/download/
+			b) Una vez instalada cree una base de datos llamada "turpialdb_pokemon"
+	paso 4) Migración de tablas a la BD "turpialdb_pokemon":
+			a) Abra la consola de comandos e ingrese a la ruta de la primera carpeta con el nombre "pokemon_project" y ejecute el comando "py manage.py makemigrations", luego de esto ejecute el comando "py manage.py migrate"
+			b) abra la  BD con cualquier gestor o el por defecto de postgres pgAdmin y verifique que tiene 24 tablas creadas en el Esquema publico de la BD "turpialdb_pokemon".
+	paso 5) Correr el servidor Django:
+			a) Ejecute el comando "py manage.py runserver"
+```
+## Estructura
+En una API RESTful, los endpoints(URL) definen la estructura de la API y cómo los usuarios finales acceden a los datos desde nuestra aplicación utilizando los métodos HTTP: GET, POST, PUT, DELETE.
+
+En este cuadro se indican los endpoint de nuestra aplicación para poder acceder a los diferentes metodos, todas las urls del cuadro se deben utilizar con la siguiente ruta "http://localhost:8000/api/v1/regions/"
+
+Endpoint |HTTP Method | CRUD Method | Nombre del Servicio| Body | Resultado
+-- | -- |-- |--
+`login/` | POST | CREATE |Login | N/A | Ingresar con un usuario creado y obtener el Token de acceso
+`pokemons/:id/` | GET | READ | Pokemon specie detail | N/A | Obtener los detalles de un pokemon en especifico. 
+`pokemons/own/` | GET | READ | Pokemon catch | N/A | Obtener los pokemons en tu party (debe estar autenticado)
+`pokemons/own/` | POST | CREATE | Pokemon catch | (A) | Guardar un pokemon en tu "Storage" (debe estar autenticado)
+`pokemons/own/:id/` | PUT | UPDATE |Pokemon rename | (B) | Cambia el "nickname" a tu pokemon (debe estar autenticado)
+`pokemons/own/:id/` | DELETE | DELETE | Pokemon release | N/A | Eliminar un pokemon de tu "Storage"
+`pokemons/own/party/'` | GET | READ | Pokemon party | N/A | Obtener los pokemons en tu "Party"
+`regions/` | GET | READ | Regions list | N/A | Obtener todas las Regiones
+`regions/:id/` | GET | READ | Regions detail | N/A | Obtener una Region en especifica con sus detalles de ubicación
+`location/:id/` | GET | READ | Location detail | N/A | Obtener una Ubicacion en especifica con sus detalles de area
+`areas/:id` | GET | READ | Area detail | N/A | Obtener una Area y los detalles de las especies Pokemon pertenecientes a dicha Area
+
+
+Body "(A)"
+{
+"id_pokemons": 93,
+"nick_name": "Pedro",
+"is_party_member": true
+}
+
+Body "(B)"
+{
+"nick_name": "Timmy"
+}
+
+
