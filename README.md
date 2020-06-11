@@ -26,11 +26,11 @@ De igual forma se tienen todas las depedencias en el entorno virutal (pokemonEnv
 			a) Ejecute el comando "py manage.py runserver"
 ```
 ## Login y Tokens
-Para obtener un token y poder utilizar los servicios que solicitan autenticacion primero debemos registrarnos con un super usuario para esto aplicamos el siguiente comando:
+Para obtener un token y poder utilizar los servicios que solicitan autenticación primero debemos registrarnos con un super usuario para esto aplicamos el siguiente comando:
 ```
 	py manage.py createsuperuser
 ```
-En la consola de comandos se solicitaran el nombre usuario, correo y contraseña. Hecho esto ya tendras un usuario el cual deberas autenticar para obtener un Token por medio de la siguiente url:
+En la consola de comandos se solicitará el nombre de usuario, correo y contraseña. Hecho esto se tendra un usuario el cual deberas autenticar para obtener un Token por medio de la siguiente url:
 ```
 	http://localhost:8000/api/v1/login/"
 ```
@@ -38,10 +38,10 @@ El metodo a utilizar sera "POST" con el siguiente Cuerpo:
 ```
 	{
 		"username": "escriba aqui su username",
-		"password": "escriba aque su password"
+		"password": "escriba aqui su password"
 	}
 ```
-Finalmente a la hora de consumir un servicio que requiera autenticación, deberas crear una llave(Key) en la cabecera con el nombre "Authorization" con el valor(value) "Token (colocar aqui su token sin paratensis)"
+Finalmente a la hora de consumir un servicio que requiera autenticación, deberas crear una llave(Key) en la cabecera con el nombre "Authorization" con el valor(value) "Token (colocar aquí su token sin paratensís)"
 
 **NOTA:**
 Si deseas registrar mas usario a la aplicación lo podras realizar mediante el panel de Administración que proporciona Django, con el siguiente enlace:
