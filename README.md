@@ -87,4 +87,4 @@ Endpoint |HTTP Method | CRUD Method | Nombre del Servicio| Cuerpo | Resultado
 
 ## Utilidades
 
-En la carpeta Utils_BD se encuentra el Diagrama de Entidad Relacion en dos formatos .png y html. Para visualizar el html debe ingresar en la carpeta "DiagramaER_HTML" y abrir el archivo "index.html" en el cual se proporciona ademas del Diagrama Entidad Relacion una visualización de las tablas con los tipos de datos de los campos y cuales son requeridos.
+En la carpeta Utils_BD se encuentra el Diagrama de Entidad Relacion en dos formatos .png y html. Para visualizar el html debe ingresar en la carpeta "DiagramaER_HTML" y abrir el archivo "index.html" en el cual se proporciona ademas del Diagrama Entidad Relacion una visualización de tablas, tipo de datos de campos, campos requeridos y relaciones de la Base de Datos "turpialdb_pokemon".
