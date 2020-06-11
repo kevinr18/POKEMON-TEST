@@ -25,12 +25,30 @@ De igual forma se tienen todas las depedencias en el entorno virutal (pokemonEnv
 	paso 5) Correr el servidor Django:
 			a) Ejecute el comando "py manage.py runserver"
 ```
+## Login y Tokens
+Para obtener un token y poder utilizar los servicios que solicitan autenticacion primero debemos registrarnos con un super usuario para esto aplicamos el siguiente comando:
+```
+	py manage.py createsuperuser
+```
+En la consola de comandos se solicitaran el nombre usuario, correo y contraseña. Hecho esto ya tendras un usuario el cual deberas autenticar para obtener un Token por medio de la siguiente url:
+```
+	http://localhost:8000/api/v1/login/"
+```
+El metodo a utilizar sera "POST" con el siguiente Cuerpo:
+```
+	{
+		"username": "escriba aqui su username",
+		"password": "escriba aque su password"
+	}
+```
+Finalmente a la hora de consumir un servicio que requiera autenticación ya generado, debera crear una llave(Key) en la cabezara  con el nombre "Authorization" con el valor(value) "Token (colocar aqui su token sin paratensis)"
+
 ## Estructura
 En una API RESTful, los endpoints(URL) definen la estructura de la API y cómo los usuarios finales acceden a los datos desde nuestra aplicación utilizando los métodos HTTP: GET, POST, PUT, DELETE.
 
-En este cuadro se indican los endpoint de nuestra aplicación para poder acceder a los diferentes metodos, todas las urls del cuadro se deben utilizar con la siguiente ruta "http://localhost:8000/api/v1/regions/"
+En este cuadro se indican los endpoint de nuestra aplicación para poder acceder a los diferentes metodos, todas las urls del cuadro se deben utilizar con la siguiente ruta "http://localhost:8000/api/v1/"
 
-Endpoint |HTTP Method | CRUD Method | Nombre del Servicio| Body | Resultado
+Endpoint |HTTP Method | CRUD Method | Nombre del Servicio| Cuerpo | Resultado
 -- | -- |-- |-- | -- | --
 `login/` | POST | CREATE |Login | N/A | Ingresar con un usuario creado y obtener el Token de acceso
 `pokemons/:id/` | GET | READ | Pokemon specie detail | N/A | Obtener los detalles de un pokemon en especifico. 
@@ -44,17 +62,18 @@ Endpoint |HTTP Method | CRUD Method | Nombre del Servicio| Body | Resultado
 `location/:id/` | GET | READ | Location detail | N/A | Obtener una Ubicacion en especifica con sus detalles de area
 `areas/:id` | GET | READ | Area detail | N/A | Obtener una Area y los detalles de las especies Pokemon pertenecientes a dicha Area
 
-
-Body "(A)"
-{
-"id_pokemons": 93,
-"nick_name": "Pedro",
-"is_party_member": true
-}
-
-Body "(B)"
-{
-"nick_name": "Timmy"
-}
-
+```
+	Cuerpo "(A)": 
+	{
+	"id_pokemons": 93,
+	"nick_name": "Pedro",
+	"is_party_member": true
+	}
+```
+```
+	Cuerpo "(B)"
+	{
+	"nick_name": "Timmy"
+	}
+```
 
