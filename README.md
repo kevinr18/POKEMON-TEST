@@ -41,7 +41,13 @@ El metodo a utilizar sera "POST" con el siguiente Cuerpo:
 		"password": "escriba aque su password"
 	}
 ```
-Finalmente a la hora de consumir un servicio que requiera autenticación ya generado, debera crear una llave(Key) en la cabezara  con el nombre "Authorization" con el valor(value) "Token (colocar aqui su token sin paratensis)"
+Finalmente a la hora de consumir un servicio que requiera autenticación, deberas crear una llave(Key) en la cabecera con el nombre "Authorization" con el valor(value) "Token (colocar aqui su token sin paratensis)"
+
+**NOTA:**
+Si deseas registrar mas usario a la aplicación lo podras realizar mediante el panel de Administración que proporciona Django, con el siguiente enlace:
+```
+	http://localhost:8000/admin/auth/user/
+```
 
 ## Estructura
 En una API RESTful, los endpoints(URL) definen la estructura de la API y cómo los usuarios finales acceden a los datos desde nuestra aplicación utilizando los métodos HTTP: GET, POST, PUT, DELETE.
