@@ -1,0 +1,2208 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="TDM_Report">
+        <link rel="stylesheet" type="text/css" media="screen" href="anim.css" title="report">
+        <link rel="stylesheet" type="text/css" media="print" href="anim_NoFrames_print.css" title="report">
+            <script src="tdmShowDetails.js" type="text/javascript"></script>
+        <title>Toad Data Modeler - HTML Report</title>
+    </head>
+
+<body onLoad="getUrlItem()"><div class="mainContainer"><div id="headerContainer"><div id="header"><div class="title1"></div><div class="title2">Attributes</div><div class="reportStats">jueves, 11 de junio de 2020 9:49:38 a. m.</div><div class="titleimage"><a href="https://www.quest.com/" target="_blank"><img src="Img/logo.png" alt="Made with Toad Data Modeler" border="0" /></a></div><div class="headerEnd"><p>&nbsp;</p></div></div><div id="navTop"><ul><li><a href="MInfo.html">Model Info</a></li><li><a href="MImage.html">ER Diagram</a></li><li><a href="Tables.html">Entities</a></li><li class="selLi"><a href="Columns.html" class="selAnchor">Attributes</a></li><li><a href="Indexes.html">Indexes</a></li><li><a href="Keys.html">Keys</a></li><li><a href="Relations.html">Relationships</a></li><li><a href="Schemas.html">Schemas</a></li></ul><div id="navTopEnd"><p>&nbsp;</p></div></div></div><div id="navCombo"><form name="allItems" action=""><select name="listOfItems" onChange="showSelected()"><option value="Attribute_{EED79FDB-B0D7-4A57-87FE-F4CF472C89B4}">abilities.ability</option><option value="Attribute_{0461F8DC-267E-498D-A6F4-61BA3279312B}">abilities.id</option><option>------------</option><option value="Attribute_{901C9C3D-508E-4464-82E8-2B35F7C690AF}">areas.id</option><option value="Attribute_{9AD2999D-359E-4CFC-90B6-9905A61E7D24}">areas.id_locations</option><option value="Attribute_{9E39E2EE-4182-4DDD-87A1-F9CD60C35262}">areas.location</option><option value="Attribute_{A6025F4C-4251-4DC1-A8C4-D173C520E1DE}">areas.name</option><option value="Attribute_{D8D83FD6-7A49-4361-B9C1-B122CFE3AFFE}">areas.pokemon_count</option><option>------------</option><option value="Attribute_{099594D0-9C91-4D36-882A-829E0BFC2A6F}">locations.id</option><option value="Attribute_{778A7129-B776-49C0-B273-4EF61AF7C7D6}">locations.id_regions</option><option value="Attribute_{AB40E457-4D96-4889-9B4D-145554104053}">locations.name</option><option>------------</option><option value="Attribute_{F4D90AF1-E55F-4DDD-A84C-ABEC9506CFE6}">moves.id</option><option value="Attribute_{0D53226F-76B7-434F-9074-3EEE1648A386}">moves.move</option><option>------------</option><option value="Attribute_{F90B8C3B-5654-4FC5-BF39-18AAA168073D}">pokemons.capture_rate</option><option value="Attribute_{C5E48970-9033-4132-AAC0-A651BD3C1FF2}">pokemons.color</option><option value="Attribute_{6101B7D0-7135-4C12-B7F3-9286FD742122}">pokemons.flavor_text</option><option value="Attribute_{B032ABCE-2A92-432D-BC5C-2EDB60FE3903}">pokemons.height</option><option value="Attribute_{C2B4DFA0-7B71-4013-8D16-565FD7E76A13}">pokemons.id</option><option value="Attribute_{9E377876-B90A-432B-B815-D7988A817D20}">pokemons.id_areas</option><option value="Attribute_{7A41A457-E2AD-423C-AE0C-1DB0A15D0903}">pokemons.id_sprites</option><option value="Attribute_{BB8D423D-F649-4047-9B71-A47F0C57E99D}">pokemons.name</option><option value="Attribute_{07D78F58-FCC2-4BFD-8C2A-FCDA634EDFF2}">pokemons.weight</option><option>------------</option><option value="Attribute_{8792A718-1B17-4F9E-8F9E-EAD1C8E95312}">pokemons_abilities.id</option><option value="Attribute_{DC2408C7-9173-4D56-9BA6-1300C4C9B386}">pokemons_abilities.id_abilities</option><option value="Attribute_{68F6F760-DBF1-4F8B-BF55-98B0FE999E9F}">pokemons_abilities.id_pokemons</option><option>------------</option><option value="Attribute_{91236B8C-4697-4100-A73E-AB751CD02B73}">pokemons_moves.id</option><option value="Attribute_{DDDAB725-2EF4-4AEB-B3DB-106256A79C3B}">pokemons_moves.id_moves</option><option value="Attribute_{3B6E3187-323C-43FC-A8FB-D85E0572CBF1}">pokemons_moves.id_pokemons</option><option>------------</option><option value="Attribute_{B5D6D9C3-17D2-43C1-84CA-171E595950EA}">pokemons_types.id</option><option value="Attribute_{C1E4DF2C-7EF6-4ED6-9833-7B652689DDFD}">pokemons_types.id_pokemons</option><option value="Attribute_{DD284A20-D930-4A1A-BC10-20AEBF6F5634}">pokemons_types.id_types</option><option>------------</option><option value="Attribute_{9ECCD25E-304F-4BA5-8199-77A225C26CA8}">regions.id</option><option value="Attribute_{39C20056-EC2E-4422-B865-C412F6368B3F}">regions.name</option><option>------------</option><option value="Attribute_{A9BAFA01-77C5-4A5C-BBCB-F2F5E4E57634}">sprites.back_default</option><option value="Attribute_{27A3AA95-F173-446E-8E91-22F9735036E4}">sprites.back_female</option><option value="Attribute_{5498147E-BAB1-44C3-805E-BF139B69BFEC}">sprites.back_shiny</option><option value="Attribute_{BFBA5BCF-100E-43E5-9A82-F01D363D3750}">sprites.back_shiny_female</option><option value="Attribute_{AE93FB17-78E0-44ED-B524-072B8980F9DC}">sprites.front_default</option><option value="Attribute_{333835CE-AAD2-4DBF-9043-9C7B7143DBCF}">sprites.front_female</option><option value="Attribute_{2F60EE4F-1BB7-4C20-AC2F-F50B2448BF20}">sprites.front_shiny</option><option value="Attribute_{73E8121C-DCB8-4091-8B9F-6E8DCA3B4E49}">sprites.front_shiny_female</option><option value="Attribute_{E297B647-EF96-4409-9883-0292A09BFE3F}">sprites.id</option><option>------------</option><option value="Attribute_{7B8F90EF-ECEC-4D9F-B141-C028D46C0F9A}">stats.id</option><option value="Attribute_{37367073-DEE2-4A32-AE7C-50BBBD8CD278}">stats.id_pokemons</option><option value="Attribute_{A2F3195D-C504-4FFF-BB4F-57D2ED764594}">stats.name</option><option value="Attribute_{E774606C-AB1F-4A6F-8F30-25748F4DC792}">stats.value</option><option>------------</option><option value="Attribute_{2F8B0B49-A90B-438C-9B03-6E996ED0DB59}">storage.id</option><option value="Attribute_{31A08647-7459-4A60-8EEC-27EA14B95359}">storage.id_pokemons</option><option value="Attribute_{F047B0C7-A226-4039-960A-BBCDAB38B23F}">storage.is_party_member</option><option value="Attribute_{FD9CBD85-0D75-455C-8BD6-6E1EFC6C784F}">storage.nick_name</option><option>------------</option><option value="Attribute_{192DA239-F63D-4233-9520-C0C5BE1145E8}">types.id</option><option value="Attribute_{096C77D2-B19C-4832-8F2E-4942DA70D846}">types.type</option></select></form><div id="navComboEnd"><p></p></div></div><div id="navLeft"><div id="bookmark"><ul><li><a onClick="return showDetail('Attribute_{EED79FDB-B0D7-4A57-87FE-F4CF472C89B4}', this)">abilities.ability</a></li><li><a onClick="return showDetail('Attribute_{0461F8DC-267E-498D-A6F4-61BA3279312B}', this)">abilities.id</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Attribute_{901C9C3D-508E-4464-82E8-2B35F7C690AF}', this)">areas.id</a></li><li><a onClick="return showDetail('Attribute_{9AD2999D-359E-4CFC-90B6-9905A61E7D24}', this)">areas.id_locations</a></li><li><a onClick="return showDetail('Attribute_{9E39E2EE-4182-4DDD-87A1-F9CD60C35262}', this)">areas.location</a></li><li><a onClick="return showDetail('Attribute_{A6025F4C-4251-4DC1-A8C4-D173C520E1DE}', this)">areas.name</a></li><li><a onClick="return showDetail('Attribute_{D8D83FD6-7A49-4361-B9C1-B122CFE3AFFE}', this)">areas.pokemon_count</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Attribute_{099594D0-9C91-4D36-882A-829E0BFC2A6F}', this)">locations.id</a></li><li><a onClick="return showDetail('Attribute_{778A7129-B776-49C0-B273-4EF61AF7C7D6}', this)">locations.id_regions</a></li><li><a onClick="return showDetail('Attribute_{AB40E457-4D96-4889-9B4D-145554104053}', this)">locations.name</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Attribute_{F4D90AF1-E55F-4DDD-A84C-ABEC9506CFE6}', this)">moves.id</a></li><li><a onClick="return showDetail('Attribute_{0D53226F-76B7-434F-9074-3EEE1648A386}', this)">moves.move</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Attribute_{F90B8C3B-5654-4FC5-BF39-18AAA168073D}', this)">pokemons.capture_rate</a></li><li><a onClick="return showDetail('Attribute_{C5E48970-9033-4132-AAC0-A651BD3C1FF2}', this)">pokemons.color</a></li><li><a onClick="return showDetail('Attribute_{6101B7D0-7135-4C12-B7F3-9286FD742122}', this)">pokemons.flavor_text</a></li><li><a onClick="return showDetail('Attribute_{B032ABCE-2A92-432D-BC5C-2EDB60FE3903}', this)">pokemons.height</a></li><li><a onClick="return showDetail('Attribute_{C2B4DFA0-7B71-4013-8D16-565FD7E76A13}', this)">pokemons.id</a></li><li><a onClick="return showDetail('Attribute_{9E377876-B90A-432B-B815-D7988A817D20}', this)">pokemons.id_areas</a></li><li><a onClick="return showDetail('Attribute_{7A41A457-E2AD-423C-AE0C-1DB0A15D0903}', this)">pokemons.id_sprites</a></li><li><a onClick="return showDetail('Attribute_{BB8D423D-F649-4047-9B71-A47F0C57E99D}', this)">pokemons.name</a></li><li><a onClick="return showDetail('Attribute_{07D78F58-FCC2-4BFD-8C2A-FCDA634EDFF2}', this)">pokemons.weight</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Attribute_{8792A718-1B17-4F9E-8F9E-EAD1C8E95312}', this)">pokemons_abilities.id</a></li><li><a onClick="return showDetail('Attribute_{DC2408C7-9173-4D56-9BA6-1300C4C9B386}', this)">pokemons_abilities.id_abilities</a></li><li><a onClick="return showDetail('Attribute_{68F6F760-DBF1-4F8B-BF55-98B0FE999E9F}', this)">pokemons_abilities.id_pokemons</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Attribute_{91236B8C-4697-4100-A73E-AB751CD02B73}', this)">pokemons_moves.id</a></li><li><a onClick="return showDetail('Attribute_{DDDAB725-2EF4-4AEB-B3DB-106256A79C3B}', this)">pokemons_moves.id_moves</a></li><li><a onClick="return showDetail('Attribute_{3B6E3187-323C-43FC-A8FB-D85E0572CBF1}', this)">pokemons_moves.id_pokemons</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Attribute_{B5D6D9C3-17D2-43C1-84CA-171E595950EA}', this)">pokemons_types.id</a></li><li><a onClick="return showDetail('Attribute_{C1E4DF2C-7EF6-4ED6-9833-7B652689DDFD}', this)">pokemons_types.id_pokemons</a></li><li><a onClick="return showDetail('Attribute_{DD284A20-D930-4A1A-BC10-20AEBF6F5634}', this)">pokemons_types.id_types</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Attribute_{9ECCD25E-304F-4BA5-8199-77A225C26CA8}', this)">regions.id</a></li><li><a onClick="return showDetail('Attribute_{39C20056-EC2E-4422-B865-C412F6368B3F}', this)">regions.name</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Attribute_{A9BAFA01-77C5-4A5C-BBCB-F2F5E4E57634}', this)">sprites.back_default</a></li><li><a onClick="return showDetail('Attribute_{27A3AA95-F173-446E-8E91-22F9735036E4}', this)">sprites.back_female</a></li><li><a onClick="return showDetail('Attribute_{5498147E-BAB1-44C3-805E-BF139B69BFEC}', this)">sprites.back_shiny</a></li><li><a onClick="return showDetail('Attribute_{BFBA5BCF-100E-43E5-9A82-F01D363D3750}', this)">sprites.back_shiny_female</a></li><li><a onClick="return showDetail('Attribute_{AE93FB17-78E0-44ED-B524-072B8980F9DC}', this)">sprites.front_default</a></li><li><a onClick="return showDetail('Attribute_{333835CE-AAD2-4DBF-9043-9C7B7143DBCF}', this)">sprites.front_female</a></li><li><a onClick="return showDetail('Attribute_{2F60EE4F-1BB7-4C20-AC2F-F50B2448BF20}', this)">sprites.front_shiny</a></li><li><a onClick="return showDetail('Attribute_{73E8121C-DCB8-4091-8B9F-6E8DCA3B4E49}', this)">sprites.front_shiny_female</a></li><li><a onClick="return showDetail('Attribute_{E297B647-EF96-4409-9883-0292A09BFE3F}', this)">sprites.id</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Attribute_{7B8F90EF-ECEC-4D9F-B141-C028D46C0F9A}', this)">stats.id</a></li><li><a onClick="return showDetail('Attribute_{37367073-DEE2-4A32-AE7C-50BBBD8CD278}', this)">stats.id_pokemons</a></li><li><a onClick="return showDetail('Attribute_{A2F3195D-C504-4FFF-BB4F-57D2ED764594}', this)">stats.name</a></li><li><a onClick="return showDetail('Attribute_{E774606C-AB1F-4A6F-8F30-25748F4DC792}', this)">stats.value</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Attribute_{2F8B0B49-A90B-438C-9B03-6E996ED0DB59}', this)">storage.id</a></li><li><a onClick="return showDetail('Attribute_{31A08647-7459-4A60-8EEC-27EA14B95359}', this)">storage.id_pokemons</a></li><li><a onClick="return showDetail('Attribute_{F047B0C7-A226-4039-960A-BBCDAB38B23F}', this)">storage.is_party_member</a></li><li><a onClick="return showDetail('Attribute_{FD9CBD85-0D75-455C-8BD6-6E1EFC6C784F}', this)">storage.nick_name</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Attribute_{192DA239-F63D-4233-9520-C0C5BE1145E8}', this)">types.id</a></li><li><a onClick="return showDetail('Attribute_{096C77D2-B19C-4832-8F2E-4942DA70D846}', this)">types.type</a></li></ul><div id="bookmarkEnd"><p>&nbsp;</p></div></div></div><div class="separator" ></div><div class="container"><div id="content"><div id="Attribute_{EED79FDB-B0D7-4A57-87FE-F4CF472C89B4}" class="item">
+<a name = "Attribute_{EED79FDB-B0D7-4A57-87FE-F4CF472C89B4}"></a>
+<div class="caption1"><p>abilities.ability</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">ability</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">abilities</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{0461F8DC-267E-498D-A6F4-61BA3279312B}" class="item">
+<a name = "Attribute_{0461F8DC-267E-498D-A6F4-61BA3279312B}"></a>
+<div class="caption1"><p>abilities.id</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">abilities</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{901C9C3D-508E-4464-82E8-2B35F7C690AF}" class="item">
+<a name = "Attribute_{901C9C3D-508E-4464-82E8-2B35F7C690AF}"></a>
+<div class="caption1"><p>areas.id</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">areas</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{9AD2999D-359E-4CFC-90B6-9905A61E7D24}" class="item">
+<a name = "Attribute_{9AD2999D-359E-4CFC-90B6-9905A61E7D24}"></a>
+<div class="caption1"><p>areas.id_locations</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id_locations</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">areas</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{9E39E2EE-4182-4DDD-87A1-F9CD60C35262}" class="item">
+<a name = "Attribute_{9E39E2EE-4182-4DDD-87A1-F9CD60C35262}"></a>
+<div class="caption1"><p>areas.location</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">location</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">areas</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{A6025F4C-4251-4DC1-A8C4-D173C520E1DE}" class="item">
+<a name = "Attribute_{A6025F4C-4251-4DC1-A8C4-D173C520E1DE}"></a>
+<div class="caption1"><p>areas.name</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">name</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">areas</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{D8D83FD6-7A49-4361-B9C1-B122CFE3AFFE}" class="item">
+<a name = "Attribute_{D8D83FD6-7A49-4361-B9C1-B122CFE3AFFE}"></a>
+<div class="caption1"><p>areas.pokemon_count</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">pokemon_count</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">areas</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{099594D0-9C91-4D36-882A-829E0BFC2A6F}" class="item">
+<a name = "Attribute_{099594D0-9C91-4D36-882A-829E0BFC2A6F}"></a>
+<div class="caption1"><p>locations.id</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">locations</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{778A7129-B776-49C0-B273-4EF61AF7C7D6}" class="item">
+<a name = "Attribute_{778A7129-B776-49C0-B273-4EF61AF7C7D6}"></a>
+<div class="caption1"><p>locations.id_regions</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id_regions</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">locations</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{AB40E457-4D96-4889-9B4D-145554104053}" class="item">
+<a name = "Attribute_{AB40E457-4D96-4889-9B4D-145554104053}"></a>
+<div class="caption1"><p>locations.name</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">name</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">locations</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{F4D90AF1-E55F-4DDD-A84C-ABEC9506CFE6}" class="item">
+<a name = "Attribute_{F4D90AF1-E55F-4DDD-A84C-ABEC9506CFE6}"></a>
+<div class="caption1"><p>moves.id</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">moves</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{0D53226F-76B7-434F-9074-3EEE1648A386}" class="item">
+<a name = "Attribute_{0D53226F-76B7-434F-9074-3EEE1648A386}"></a>
+<div class="caption1"><p>moves.move</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">move</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">moves</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{F90B8C3B-5654-4FC5-BF39-18AAA168073D}" class="item">
+<a name = "Attribute_{F90B8C3B-5654-4FC5-BF39-18AAA168073D}"></a>
+<div class="caption1"><p>pokemons.capture_rate</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">capture_rate</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Double precision</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{C5E48970-9033-4132-AAC0-A651BD3C1FF2}" class="item">
+<a name = "Attribute_{C5E48970-9033-4132-AAC0-A651BD3C1FF2}"></a>
+<div class="caption1"><p>pokemons.color</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">color</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{6101B7D0-7135-4C12-B7F3-9286FD742122}" class="item">
+<a name = "Attribute_{6101B7D0-7135-4C12-B7F3-9286FD742122}"></a>
+<div class="caption1"><p>pokemons.flavor_text</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">flavor_text</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{B032ABCE-2A92-432D-BC5C-2EDB60FE3903}" class="item">
+<a name = "Attribute_{B032ABCE-2A92-432D-BC5C-2EDB60FE3903}"></a>
+<div class="caption1"><p>pokemons.height</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">height</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Double precision</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{C2B4DFA0-7B71-4013-8D16-565FD7E76A13}" class="item">
+<a name = "Attribute_{C2B4DFA0-7B71-4013-8D16-565FD7E76A13}"></a>
+<div class="caption1"><p>pokemons.id</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{9E377876-B90A-432B-B815-D7988A817D20}" class="item">
+<a name = "Attribute_{9E377876-B90A-432B-B815-D7988A817D20}"></a>
+<div class="caption1"><p>pokemons.id_areas</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id_areas</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{7A41A457-E2AD-423C-AE0C-1DB0A15D0903}" class="item">
+<a name = "Attribute_{7A41A457-E2AD-423C-AE0C-1DB0A15D0903}"></a>
+<div class="caption1"><p>pokemons.id_sprites</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id_sprites</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{BB8D423D-F649-4047-9B71-A47F0C57E99D}" class="item">
+<a name = "Attribute_{BB8D423D-F649-4047-9B71-A47F0C57E99D}"></a>
+<div class="caption1"><p>pokemons.name</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">name</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{07D78F58-FCC2-4BFD-8C2A-FCDA634EDFF2}" class="item">
+<a name = "Attribute_{07D78F58-FCC2-4BFD-8C2A-FCDA634EDFF2}"></a>
+<div class="caption1"><p>pokemons.weight</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">weight</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Double precision</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{8792A718-1B17-4F9E-8F9E-EAD1C8E95312}" class="item">
+<a name = "Attribute_{8792A718-1B17-4F9E-8F9E-EAD1C8E95312}"></a>
+<div class="caption1"><p>pokemons_abilities.id</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons_abilities</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{DC2408C7-9173-4D56-9BA6-1300C4C9B386}" class="item">
+<a name = "Attribute_{DC2408C7-9173-4D56-9BA6-1300C4C9B386}"></a>
+<div class="caption1"><p>pokemons_abilities.id_abilities</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id_abilities</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons_abilities</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{68F6F760-DBF1-4F8B-BF55-98B0FE999E9F}" class="item">
+<a name = "Attribute_{68F6F760-DBF1-4F8B-BF55-98B0FE999E9F}"></a>
+<div class="caption1"><p>pokemons_abilities.id_pokemons</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id_pokemons</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons_abilities</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{91236B8C-4697-4100-A73E-AB751CD02B73}" class="item">
+<a name = "Attribute_{91236B8C-4697-4100-A73E-AB751CD02B73}"></a>
+<div class="caption1"><p>pokemons_moves.id</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons_moves</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{DDDAB725-2EF4-4AEB-B3DB-106256A79C3B}" class="item">
+<a name = "Attribute_{DDDAB725-2EF4-4AEB-B3DB-106256A79C3B}"></a>
+<div class="caption1"><p>pokemons_moves.id_moves</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id_moves</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons_moves</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{3B6E3187-323C-43FC-A8FB-D85E0572CBF1}" class="item">
+<a name = "Attribute_{3B6E3187-323C-43FC-A8FB-D85E0572CBF1}"></a>
+<div class="caption1"><p>pokemons_moves.id_pokemons</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id_pokemons</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons_moves</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{B5D6D9C3-17D2-43C1-84CA-171E595950EA}" class="item">
+<a name = "Attribute_{B5D6D9C3-17D2-43C1-84CA-171E595950EA}"></a>
+<div class="caption1"><p>pokemons_types.id</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons_types</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{C1E4DF2C-7EF6-4ED6-9833-7B652689DDFD}" class="item">
+<a name = "Attribute_{C1E4DF2C-7EF6-4ED6-9833-7B652689DDFD}"></a>
+<div class="caption1"><p>pokemons_types.id_pokemons</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id_pokemons</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons_types</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{DD284A20-D930-4A1A-BC10-20AEBF6F5634}" class="item">
+<a name = "Attribute_{DD284A20-D930-4A1A-BC10-20AEBF6F5634}"></a>
+<div class="caption1"><p>pokemons_types.id_types</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id_types</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">pokemons_types</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{9ECCD25E-304F-4BA5-8199-77A225C26CA8}" class="item">
+<a name = "Attribute_{9ECCD25E-304F-4BA5-8199-77A225C26CA8}"></a>
+<div class="caption1"><p>regions.id</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">regions</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{39C20056-EC2E-4422-B865-C412F6368B3F}" class="item">
+<a name = "Attribute_{39C20056-EC2E-4422-B865-C412F6368B3F}"></a>
+<div class="caption1"><p>regions.name</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">name</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">regions</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{A9BAFA01-77C5-4A5C-BBCB-F2F5E4E57634}" class="item">
+<a name = "Attribute_{A9BAFA01-77C5-4A5C-BBCB-F2F5E4E57634}"></a>
+<div class="caption1"><p>sprites.back_default</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">back_default</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">sprites</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{27A3AA95-F173-446E-8E91-22F9735036E4}" class="item">
+<a name = "Attribute_{27A3AA95-F173-446E-8E91-22F9735036E4}"></a>
+<div class="caption1"><p>sprites.back_female</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">back_female</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">sprites</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{5498147E-BAB1-44C3-805E-BF139B69BFEC}" class="item">
+<a name = "Attribute_{5498147E-BAB1-44C3-805E-BF139B69BFEC}"></a>
+<div class="caption1"><p>sprites.back_shiny</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">back_shiny</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">sprites</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{BFBA5BCF-100E-43E5-9A82-F01D363D3750}" class="item">
+<a name = "Attribute_{BFBA5BCF-100E-43E5-9A82-F01D363D3750}"></a>
+<div class="caption1"><p>sprites.back_shiny_female</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">back_shiny_female</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">sprites</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{AE93FB17-78E0-44ED-B524-072B8980F9DC}" class="item">
+<a name = "Attribute_{AE93FB17-78E0-44ED-B524-072B8980F9DC}"></a>
+<div class="caption1"><p>sprites.front_default</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">front_default</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">sprites</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{333835CE-AAD2-4DBF-9043-9C7B7143DBCF}" class="item">
+<a name = "Attribute_{333835CE-AAD2-4DBF-9043-9C7B7143DBCF}"></a>
+<div class="caption1"><p>sprites.front_female</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">front_female</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">sprites</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{2F60EE4F-1BB7-4C20-AC2F-F50B2448BF20}" class="item">
+<a name = "Attribute_{2F60EE4F-1BB7-4C20-AC2F-F50B2448BF20}"></a>
+<div class="caption1"><p>sprites.front_shiny</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">front_shiny</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">sprites</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{73E8121C-DCB8-4091-8B9F-6E8DCA3B4E49}" class="item">
+<a name = "Attribute_{73E8121C-DCB8-4091-8B9F-6E8DCA3B4E49}"></a>
+<div class="caption1"><p>sprites.front_shiny_female</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">front_shiny_female</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">sprites</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{E297B647-EF96-4409-9883-0292A09BFE3F}" class="item">
+<a name = "Attribute_{E297B647-EF96-4409-9883-0292A09BFE3F}"></a>
+<div class="caption1"><p>sprites.id</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">sprites</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{7B8F90EF-ECEC-4D9F-B141-C028D46C0F9A}" class="item">
+<a name = "Attribute_{7B8F90EF-ECEC-4D9F-B141-C028D46C0F9A}"></a>
+<div class="caption1"><p>stats.id</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">stats</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{37367073-DEE2-4A32-AE7C-50BBBD8CD278}" class="item">
+<a name = "Attribute_{37367073-DEE2-4A32-AE7C-50BBBD8CD278}"></a>
+<div class="caption1"><p>stats.id_pokemons</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id_pokemons</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">stats</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{A2F3195D-C504-4FFF-BB4F-57D2ED764594}" class="item">
+<a name = "Attribute_{A2F3195D-C504-4FFF-BB4F-57D2ED764594}"></a>
+<div class="caption1"><p>stats.name</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">name</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">stats</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{E774606C-AB1F-4A6F-8F30-25748F4DC792}" class="item">
+<a name = "Attribute_{E774606C-AB1F-4A6F-8F30-25748F4DC792}"></a>
+<div class="caption1"><p>stats.value</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">value</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">stats</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{2F8B0B49-A90B-438C-9B03-6E996ED0DB59}" class="item">
+<a name = "Attribute_{2F8B0B49-A90B-438C-9B03-6E996ED0DB59}"></a>
+<div class="caption1"><p>storage.id</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">storage</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{31A08647-7459-4A60-8EEC-27EA14B95359}" class="item">
+<a name = "Attribute_{31A08647-7459-4A60-8EEC-27EA14B95359}"></a>
+<div class="caption1"><p>storage.id_pokemons</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id_pokemons</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">storage</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{F047B0C7-A226-4039-960A-BBCDAB38B23F}" class="item">
+<a name = "Attribute_{F047B0C7-A226-4039-960A-BBCDAB38B23F}"></a>
+<div class="caption1"><p>storage.is_party_member</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">is_party_member</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">storage</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Boolean</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{FD9CBD85-0D75-455C-8BD6-6E1EFC6C784F}" class="item">
+<a name = "Attribute_{FD9CBD85-0D75-455C-8BD6-6E1EFC6C784F}"></a>
+<div class="caption1"><p>storage.nick_name</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">nick_name</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">storage</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{192DA239-F63D-4233-9520-C0C5BE1145E8}" class="item">
+<a name = "Attribute_{192DA239-F63D-4233-9520-C0C5BE1145E8}"></a>
+<div class="caption1"><p>types.id</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">id</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">types</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Bigint</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Attribute_{096C77D2-B19C-4832-8F2E-4942DA70D846}" class="item">
+<a name = "Attribute_{096C77D2-B19C-4832-8F2E-4942DA70D846}"></a>
+<div class="caption1"><p>types.type</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="30%">type</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Entity Name</td>
+<td class="tabdata" width="30%">types</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Primary Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Foreign Key</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabdata" width="30%">Character varying(200)</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Not Null</td>
+<td class="tabdata" width="30%">YES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Unique</td>
+<td class="tabdata" width="30%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+</div><div id="footer"><div class="pageFooter">Copyright &copy; Sitename 2005</div><div class="footerEnd"><p></p></div></div></div></div></body></html>

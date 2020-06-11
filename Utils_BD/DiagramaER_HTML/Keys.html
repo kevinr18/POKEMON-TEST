@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="TDM_Report">
+        <link rel="stylesheet" type="text/css" media="screen" href="anim.css" title="report">
+        <link rel="stylesheet" type="text/css" media="print" href="anim_NoFrames_print.css" title="report">
+            <script src="tdmShowDetails.js" type="text/javascript"></script>
+        <title>Toad Data Modeler - HTML Report</title>
+    </head>
+
+<body onLoad="getUrlItem()"><div class="mainContainer"><div id="headerContainer"><div id="header"><div class="title1"></div><div class="title2">Keys</div><div class="reportStats">jueves, 11 de junio de 2020 9:49:38 a. m.</div><div class="titleimage"><a href="https://www.quest.com/" target="_blank"><img src="Img/logo.png" alt="Made with Toad Data Modeler" border="0" /></a></div><div class="headerEnd"><p>&nbsp;</p></div></div><div id="navTop"><ul><li><a href="MInfo.html">Model Info</a></li><li><a href="MImage.html">ER Diagram</a></li><li><a href="Tables.html">Entities</a></li><li><a href="Columns.html">Attributes</a></li><li><a href="Indexes.html">Indexes</a></li><li class="selLi"><a href="Keys.html" class="selAnchor">Keys</a></li><li><a href="Relations.html">Relationships</a></li><li><a href="Schemas.html">Schemas</a></li></ul><div id="navTopEnd"><p>&nbsp;</p></div></div></div><div id="navCombo"><form name="allItems" action=""><select name="listOfItems" onChange="showSelected()"><option value="Key_{3DD4C67E-2F61-4992-9360-12FD3DB88349}">PK_&lt;%OwnerName%&gt; (abilities)</option><option>------------</option><option value="Key_{00F38A38-DA20-49B2-8A6C-BE1E74AE7E2A}">PK_&lt;%OwnerName%&gt; (areas)</option><option>------------</option><option value="Key_{9EF61E40-AFD4-4416-A513-FCBDE70FC2B8}">PK_&lt;%OwnerName%&gt; (locations)</option><option>------------</option><option value="Key_{AEF525DC-D413-4077-B344-046B10E4EA1C}">PK_&lt;%OwnerName%&gt; (moves)</option><option>------------</option><option value="Key_{61C5B4F3-7765-4227-84C0-3D3C678D07B3}">PK_&lt;%OwnerName%&gt; (pokemons)</option><option>------------</option><option value="Key_{C085E26D-5C0B-4A21-94E8-5D0257116CF7}">PK_&lt;%OwnerName%&gt; (pokemons_abilities)</option><option>------------</option><option value="Key_{B12DB842-63EC-4895-B818-D4293467836F}">PK_&lt;%OwnerName%&gt; (pokemons_moves)</option><option>------------</option><option value="Key_{CEE0ED55-6A06-4119-876F-3C634389066F}">PK_&lt;%OwnerName%&gt; (pokemons_types)</option><option>------------</option><option value="Key_{4130030E-FFFA-4DAD-BCD2-E2E5A6BCF15C}">PK_&lt;%OwnerName%&gt; (regions)</option><option>------------</option><option value="Key_{B4E8C7C8-77FC-46BB-A9C3-C0C7F9C33E8F}">PK_&lt;%OwnerName%&gt; (sprites)</option><option>------------</option><option value="Key_{8EDC555B-AE77-47A6-909B-6C9604237FD5}">PK_&lt;%OwnerName%&gt; (stats)</option><option>------------</option><option value="Key_{A8BE677D-D5B0-4408-BBE1-8AABE7EF34DE}">PK_&lt;%OwnerName%&gt; (storage)</option><option>------------</option><option value="Key_{29016186-063E-4DA8-9D09-C746195D9867}">PK_&lt;%OwnerName%&gt; (types)</option></select></form><div id="navComboEnd"><p></p></div></div><div id="navLeft"><div id="bookmark"><ul><li><a onClick="return showDetail('Key_{3DD4C67E-2F61-4992-9360-12FD3DB88349}', this)">PK_&lt;%OwnerName%&gt; (abilities)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{00F38A38-DA20-49B2-8A6C-BE1E74AE7E2A}', this)">PK_&lt;%OwnerName%&gt; (areas)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{9EF61E40-AFD4-4416-A513-FCBDE70FC2B8}', this)">PK_&lt;%OwnerName%&gt; (locations)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{AEF525DC-D413-4077-B344-046B10E4EA1C}', this)">PK_&lt;%OwnerName%&gt; (moves)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{61C5B4F3-7765-4227-84C0-3D3C678D07B3}', this)">PK_&lt;%OwnerName%&gt; (pokemons)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{C085E26D-5C0B-4A21-94E8-5D0257116CF7}', this)">PK_&lt;%OwnerName%&gt; (pokemons_abilities)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{B12DB842-63EC-4895-B818-D4293467836F}', this)">PK_&lt;%OwnerName%&gt; (pokemons_moves)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{CEE0ED55-6A06-4119-876F-3C634389066F}', this)">PK_&lt;%OwnerName%&gt; (pokemons_types)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{4130030E-FFFA-4DAD-BCD2-E2E5A6BCF15C}', this)">PK_&lt;%OwnerName%&gt; (regions)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{B4E8C7C8-77FC-46BB-A9C3-C0C7F9C33E8F}', this)">PK_&lt;%OwnerName%&gt; (sprites)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{8EDC555B-AE77-47A6-909B-6C9604237FD5}', this)">PK_&lt;%OwnerName%&gt; (stats)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{A8BE677D-D5B0-4408-BBE1-8AABE7EF34DE}', this)">PK_&lt;%OwnerName%&gt; (storage)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{29016186-063E-4DA8-9D09-C746195D9867}', this)">PK_&lt;%OwnerName%&gt; (types)</a></li></ul><div id="bookmarkEnd"><p>&nbsp;</p></div></div></div><div class="separator" ></div><div class="container"><div id="content"><div id="Key_{3DD4C67E-2F61-4992-9360-12FD3DB88349}" class="item">
+<a name = "Key_{3DD4C67E-2F61-4992-9360-12FD3DB88349}"></a>
+<div class="caption1"><p>PK_&lt;%OwnerName%&gt; (abilities)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">PK &lt;%OwnerCaption%&gt;</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">abilities</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{00F38A38-DA20-49B2-8A6C-BE1E74AE7E2A}" class="item">
+<a name = "Key_{00F38A38-DA20-49B2-8A6C-BE1E74AE7E2A}"></a>
+<div class="caption1"><p>PK_&lt;%OwnerName%&gt; (areas)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">PK &lt;%OwnerCaption%&gt;</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">areas</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{9EF61E40-AFD4-4416-A513-FCBDE70FC2B8}" class="item">
+<a name = "Key_{9EF61E40-AFD4-4416-A513-FCBDE70FC2B8}"></a>
+<div class="caption1"><p>PK_&lt;%OwnerName%&gt; (locations)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">PK &lt;%OwnerCaption%&gt;</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">locations</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{AEF525DC-D413-4077-B344-046B10E4EA1C}" class="item">
+<a name = "Key_{AEF525DC-D413-4077-B344-046B10E4EA1C}"></a>
+<div class="caption1"><p>PK_&lt;%OwnerName%&gt; (moves)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">PK &lt;%OwnerCaption%&gt;</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">moves</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{61C5B4F3-7765-4227-84C0-3D3C678D07B3}" class="item">
+<a name = "Key_{61C5B4F3-7765-4227-84C0-3D3C678D07B3}"></a>
+<div class="caption1"><p>PK_&lt;%OwnerName%&gt; (pokemons)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">PK &lt;%OwnerCaption%&gt;</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">pokemons</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{C085E26D-5C0B-4A21-94E8-5D0257116CF7}" class="item">
+<a name = "Key_{C085E26D-5C0B-4A21-94E8-5D0257116CF7}"></a>
+<div class="caption1"><p>PK_&lt;%OwnerName%&gt; (pokemons_abilities)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">PK &lt;%OwnerCaption%&gt;</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">pokemons_abilities</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{B12DB842-63EC-4895-B818-D4293467836F}" class="item">
+<a name = "Key_{B12DB842-63EC-4895-B818-D4293467836F}"></a>
+<div class="caption1"><p>PK_&lt;%OwnerName%&gt; (pokemons_moves)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">PK &lt;%OwnerCaption%&gt;</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">pokemons_moves</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{CEE0ED55-6A06-4119-876F-3C634389066F}" class="item">
+<a name = "Key_{CEE0ED55-6A06-4119-876F-3C634389066F}"></a>
+<div class="caption1"><p>PK_&lt;%OwnerName%&gt; (pokemons_types)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">PK &lt;%OwnerCaption%&gt;</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">pokemons_types</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{4130030E-FFFA-4DAD-BCD2-E2E5A6BCF15C}" class="item">
+<a name = "Key_{4130030E-FFFA-4DAD-BCD2-E2E5A6BCF15C}"></a>
+<div class="caption1"><p>PK_&lt;%OwnerName%&gt; (regions)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">PK &lt;%OwnerCaption%&gt;</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">regions</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{B4E8C7C8-77FC-46BB-A9C3-C0C7F9C33E8F}" class="item">
+<a name = "Key_{B4E8C7C8-77FC-46BB-A9C3-C0C7F9C33E8F}"></a>
+<div class="caption1"><p>PK_&lt;%OwnerName%&gt; (sprites)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">PK &lt;%OwnerCaption%&gt;</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">sprites</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{8EDC555B-AE77-47A6-909B-6C9604237FD5}" class="item">
+<a name = "Key_{8EDC555B-AE77-47A6-909B-6C9604237FD5}"></a>
+<div class="caption1"><p>PK_&lt;%OwnerName%&gt; (stats)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">PK &lt;%OwnerCaption%&gt;</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">stats</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{A8BE677D-D5B0-4408-BBE1-8AABE7EF34DE}" class="item">
+<a name = "Key_{A8BE677D-D5B0-4408-BBE1-8AABE7EF34DE}"></a>
+<div class="caption1"><p>PK_&lt;%OwnerName%&gt; (storage)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">PK &lt;%OwnerCaption%&gt;</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">storage</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{29016186-063E-4DA8-9D09-C746195D9867}" class="item">
+<a name = "Key_{29016186-063E-4DA8-9D09-C746195D9867}"></a>
+<div class="caption1"><p>PK_&lt;%OwnerName%&gt; (types)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">PK &lt;%OwnerCaption%&gt;</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">types</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+</div><div id="footer"><div class="pageFooter">Copyright &copy; Sitename 2005</div><div class="footerEnd"><p></p></div></div></div></div></body></html>

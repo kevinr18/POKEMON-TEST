@@ -1,0 +1,1488 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="TDM_Report">
+        <link rel="stylesheet" type="text/css" media="screen" href="anim.css" title="report">
+        <link rel="stylesheet" type="text/css" media="print" href="anim_NoFrames_print.css" title="report">
+            <script src="tdmShowDetails.js" type="text/javascript"></script>
+        <title>Toad Data Modeler - HTML Report</title>
+    </head>
+
+<body onLoad="getUrlItem()"><div class="mainContainer"><div id="headerContainer"><div id="header"><div class="title1"></div><div class="title2">Entities</div><div class="reportStats">jueves, 11 de junio de 2020 9:49:38 a. m.</div><div class="titleimage"><a href="https://www.quest.com/" target="_blank"><img src="Img/logo.png" alt="Made with Toad Data Modeler" border="0" /></a></div><div class="headerEnd"><p>&nbsp;</p></div></div><div id="navTop"><ul><li><a href="MInfo.html">Model Info</a></li><li><a href="MImage.html">ER Diagram</a></li><li class="selLi"><a href="Tables.html" class="selAnchor">Entities</a></li><li><a href="Columns.html">Attributes</a></li><li><a href="Indexes.html">Indexes</a></li><li><a href="Keys.html">Keys</a></li><li><a href="Relations.html">Relationships</a></li><li><a href="Schemas.html">Schemas</a></li></ul><div id="navTopEnd"><p>&nbsp;</p></div></div></div><div id="navCombo"><form name="allItems" action=""><select name="listOfItems" onChange="showSelected()"><option value="Table_{C6644201-4EE0-4F65-AD75-32976DE3D180}">abilities</option><option value="Table_{FBB718D0-3707-49B9-A1EF-FAFBEB54BFA7}">areas</option><option value="Table_{DECEED23-0D32-483B-910D-33338379D7FE}">locations</option><option value="Table_{4404CDB0-4794-49F9-9AAB-A8890AA7A9B1}">moves</option><option value="Table_{A7ADFFDC-C125-481F-B464-6C72648A8917}">pokemons</option><option value="Table_{5A4535B1-3736-4841-B3A2-F0A11F067D3E}">pokemons_abilities</option><option value="Table_{29DD2820-070F-4D8C-AA13-4361C358C70C}">pokemons_moves</option><option value="Table_{987251BA-F5D8-48ED-89E1-50061011B719}">pokemons_types</option><option value="Table_{1A6FF372-3CF5-4E0A-AA32-7F59C076A53D}">regions</option><option value="Table_{85554CC8-9642-417A-AACE-C9D059AD7212}">sprites</option><option value="Table_{CAE0A492-2C4C-4ACF-A26A-29AB2C05CA50}">stats</option><option value="Table_{7A57D8C4-199F-41F7-A2F2-BB18717E5799}">storage</option><option value="Table_{610133F4-D18C-43A4-B0BC-93448D17BFDA}">types</option></select></form><div id="navComboEnd"><p></p></div></div><div id="navLeft"><div id="bookmark"><ul><li><a onClick="return showDetail('Table_{C6644201-4EE0-4F65-AD75-32976DE3D180}', this)">abilities</a></li><li><a onClick="return showDetail('Table_{FBB718D0-3707-49B9-A1EF-FAFBEB54BFA7}', this)">areas</a></li><li><a onClick="return showDetail('Table_{DECEED23-0D32-483B-910D-33338379D7FE}', this)">locations</a></li><li><a onClick="return showDetail('Table_{4404CDB0-4794-49F9-9AAB-A8890AA7A9B1}', this)">moves</a></li><li><a onClick="return showDetail('Table_{A7ADFFDC-C125-481F-B464-6C72648A8917}', this)">pokemons</a></li><li><a onClick="return showDetail('Table_{5A4535B1-3736-4841-B3A2-F0A11F067D3E}', this)">pokemons_abilities</a></li><li><a onClick="return showDetail('Table_{29DD2820-070F-4D8C-AA13-4361C358C70C}', this)">pokemons_moves</a></li><li><a onClick="return showDetail('Table_{987251BA-F5D8-48ED-89E1-50061011B719}', this)">pokemons_types</a></li><li><a onClick="return showDetail('Table_{1A6FF372-3CF5-4E0A-AA32-7F59C076A53D}', this)">regions</a></li><li><a onClick="return showDetail('Table_{85554CC8-9642-417A-AACE-C9D059AD7212}', this)">sprites</a></li><li><a onClick="return showDetail('Table_{CAE0A492-2C4C-4ACF-A26A-29AB2C05CA50}', this)">stats</a></li><li><a onClick="return showDetail('Table_{7A57D8C4-199F-41F7-A2F2-BB18717E5799}', this)">storage</a></li><li><a onClick="return showDetail('Table_{610133F4-D18C-43A4-B0BC-93448D17BFDA}', this)">types</a></li></ul><div id="bookmarkEnd"><p>&nbsp;</p></div></div></div><div class="separator" ></div><div class="container"><div id="content"><div id="Table_{C6644201-4EE0-4F65-AD75-32976DE3D180}" class="item">
+<a name = "Table_{C6644201-4EE0-4F65-AD75-32976DE3D180}"></a>
+<div class="caption1"><p>abilities</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">abilities</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">id</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">ability</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship4</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">abilities</td>
+<td class="tabdata">pokemons_abilities</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{FBB718D0-3707-49B9-A1EF-FAFBEB54BFA7}" class="item">
+<a name = "Table_{FBB718D0-3707-49B9-A1EF-FAFBEB54BFA7}"></a>
+<div class="caption1"><p>areas</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">areas</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">id</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">id_locations</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">name</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">location</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">pokemon_count</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship25</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">locations</td>
+<td class="tabdata">areas</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship26</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">areas</td>
+<td class="tabdata">pokemons</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">id</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">IX_Relationship25</td>
+<td class="tabdata">id_locations</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{DECEED23-0D32-483B-910D-33338379D7FE}" class="item">
+<a name = "Table_{DECEED23-0D32-483B-910D-33338379D7FE}"></a>
+<div class="caption1"><p>locations</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">locations</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">id</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">id_regions</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">name</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship21</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">regions</td>
+<td class="tabdata">locations</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship25</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">locations</td>
+<td class="tabdata">areas</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">id</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">IX_Relationship21</td>
+<td class="tabdata">id_regions</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{4404CDB0-4794-49F9-9AAB-A8890AA7A9B1}" class="item">
+<a name = "Table_{4404CDB0-4794-49F9-9AAB-A8890AA7A9B1}"></a>
+<div class="caption1"><p>moves</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">moves</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">id</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">move</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship11</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">moves</td>
+<td class="tabdata">pokemons_moves</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{A7ADFFDC-C125-481F-B464-6C72648A8917}" class="item">
+<a name = "Table_{A7ADFFDC-C125-481F-B464-6C72648A8917}"></a>
+<div class="caption1"><p>pokemons</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">pokemons</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">id</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">id_sprites</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">id_areas</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">name</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">capture_rate</td>
+<td class="tabdata"></td>
+<td class="tabdata">Double precision</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">color</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">flavor_text</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">height</td>
+<td class="tabdata"></td>
+<td class="tabdata">Double precision</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">weight</td>
+<td class="tabdata"></td>
+<td class="tabdata">Double precision</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship7</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">pokemons</td>
+<td class="tabdata">pokemons_abilities</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship12</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">pokemons</td>
+<td class="tabdata">pokemons_moves</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship13</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">sprites</td>
+<td class="tabdata">pokemons</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship17</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">pokemons</td>
+<td class="tabdata">pokemons_types</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship18</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">pokemons</td>
+<td class="tabdata">storage</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship26</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">areas</td>
+<td class="tabdata">pokemons</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship28</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">pokemons</td>
+<td class="tabdata">stats</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">id</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">IX_Relationship13</td>
+<td class="tabdata">id_sprites</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabdata">IX_Relationship26</td>
+<td class="tabdata">id_areas</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{5A4535B1-3736-4841-B3A2-F0A11F067D3E}" class="item">
+<a name = "Table_{5A4535B1-3736-4841-B3A2-F0A11F067D3E}"></a>
+<div class="caption1"><p>pokemons_abilities</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">pokemons_abilities</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">id</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">id_abilities</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">id_pokemons</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship4</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">abilities</td>
+<td class="tabdata">pokemons_abilities</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship7</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">pokemons</td>
+<td class="tabdata">pokemons_abilities</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">id</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">IX_Relationship4</td>
+<td class="tabdata">id_abilities</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabdata">IX_Relationship7</td>
+<td class="tabdata">id_pokemons</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{29DD2820-070F-4D8C-AA13-4361C358C70C}" class="item">
+<a name = "Table_{29DD2820-070F-4D8C-AA13-4361C358C70C}"></a>
+<div class="caption1"><p>pokemons_moves</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">pokemons_moves</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">id</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">id_pokemons</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">id_moves</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship11</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">moves</td>
+<td class="tabdata">pokemons_moves</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship12</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">pokemons</td>
+<td class="tabdata">pokemons_moves</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">id</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">IX_Relationship11</td>
+<td class="tabdata">id_moves</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabdata">IX_Relationship12</td>
+<td class="tabdata">id_pokemons</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{987251BA-F5D8-48ED-89E1-50061011B719}" class="item">
+<a name = "Table_{987251BA-F5D8-48ED-89E1-50061011B719}"></a>
+<div class="caption1"><p>pokemons_types</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">pokemons_types</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">id</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">id_types</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">id_pokemons</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship16</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">types</td>
+<td class="tabdata">pokemons_types</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship17</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">pokemons</td>
+<td class="tabdata">pokemons_types</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">id</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">IX_Relationship16</td>
+<td class="tabdata">id_types</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabdata">IX_Relationship17</td>
+<td class="tabdata">id_pokemons</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{1A6FF372-3CF5-4E0A-AA32-7F59C076A53D}" class="item">
+<a name = "Table_{1A6FF372-3CF5-4E0A-AA32-7F59C076A53D}"></a>
+<div class="caption1"><p>regions</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">regions</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">id</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">name</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship21</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">regions</td>
+<td class="tabdata">locations</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{85554CC8-9642-417A-AACE-C9D059AD7212}" class="item">
+<a name = "Table_{85554CC8-9642-417A-AACE-C9D059AD7212}"></a>
+<div class="caption1"><p>sprites</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">sprites</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">id</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">back_default</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">front_default</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">back_shiny</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">back_shiny_female</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">back_female</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">front_shiny</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">front_shiny_female</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">front_female</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship13</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">sprites</td>
+<td class="tabdata">pokemons</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{CAE0A492-2C4C-4ACF-A26A-29AB2C05CA50}" class="item">
+<a name = "Table_{CAE0A492-2C4C-4ACF-A26A-29AB2C05CA50}"></a>
+<div class="caption1"><p>stats</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">stats</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">id</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">name</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">value</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">id_pokemons</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship28</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">pokemons</td>
+<td class="tabdata">stats</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">id</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">IX_Relationship28</td>
+<td class="tabdata">id_pokemons</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{7A57D8C4-199F-41F7-A2F2-BB18717E5799}" class="item">
+<a name = "Table_{7A57D8C4-199F-41F7-A2F2-BB18717E5799}"></a>
+<div class="caption1"><p>storage</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">storage</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">id</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">id_pokemons</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">nick_name</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">is_party_member</td>
+<td class="tabdata"></td>
+<td class="tabdata">Boolean</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship18</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">pokemons</td>
+<td class="tabdata">storage</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">id</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">IX_Relationship18</td>
+<td class="tabdata">id_pokemons</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{610133F4-D18C-43A4-B0BC-93448D17BFDA}" class="item">
+<a name = "Table_{610133F4-D18C-43A4-B0BC-93448D17BFDA}"></a>
+<div class="caption1"><p>types</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">types</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">id</td>
+<td class="tabdata"></td>
+<td class="tabdata">Bigint</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">type</td>
+<td class="tabdata"></td>
+<td class="tabdata">Character varying(200)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Relationship16</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">types</td>
+<td class="tabdata">pokemons_types</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">id</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+</div><div id="footer"><div class="pageFooter">Copyright &copy; Sitename 2005</div><div class="footerEnd"><p></p></div></div></div></div></body></html>
