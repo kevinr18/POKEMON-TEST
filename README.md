@@ -31,7 +31,7 @@ En una API RESTful, los endpoints(URL) definen la estructura de la API y cómo l
 En este cuadro se indican los endpoint de nuestra aplicación para poder acceder a los diferentes metodos, todas las urls del cuadro se deben utilizar con la siguiente ruta "http://localhost:8000/api/v1/regions/"
 
 Endpoint |HTTP Method | CRUD Method | Nombre del Servicio| Body | Resultado
--- | -- |-- |--
+-- | -- |-- |-- | -- | --
 `login/` | POST | CREATE |Login | N/A | Ingresar con un usuario creado y obtener el Token de acceso
 `pokemons/:id/` | GET | READ | Pokemon specie detail | N/A | Obtener los detalles de un pokemon en especifico. 
 `pokemons/own/` | GET | READ | Pokemon catch | N/A | Obtener los pokemons en tu party (debe estar autenticado)
