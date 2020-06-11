@@ -1,6 +1,6 @@
 # PRUEBA PRÁCTICA - DjangoREST
-### Autor: Kevin Rodriguez, Correo: kevinrour19@gmail.com 
-### Empresa que realiza la prueba: TurpialDev, pagina Web: https://turpialdev.com/
+#### Autor: Kevin Rodriguez, Correo: kevinrour19@gmail.com 
+#### Empresa que realiza la prueba: TurpialDev, Pagina Web: https://turpialdev.com/
 
 ## Requerimientos
 - Python 3.7.7
