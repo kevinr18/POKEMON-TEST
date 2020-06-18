@@ -28,13 +28,11 @@ De igual forma se tienen todas las depedencias en el entorno virutal (pokemonEnv
 			a) Ejecute el comando "py manage.py runserver"
 ```
 ## Cargar data de prueba
+Una vez en la ruta del proyecto y con el enterno virtual activado, abra la consola de comando y coloque el siguente comando:
+```		
+		py manage.py loaddata pokemon\fixtures\db_data.json	
 ```
-	Una vez en la ruta del proyecto y con el enterno virtual activado, abra la consola de comando y coloque el siguente comando:
-		
-		py manage.py loaddata pokemon\fixtures\db_data.json
-	
-	Espere unos minutos a que la data se cargue cuando termine la ejecución del comando ya podra visualizar los registros cargados en la BD "turpialdb_pokemon".
-```
+Espere unos minutos a que la data se cargue cuando termine la ejecución del comando ya podra visualizar los registros cargados en la BD "turpialdb_pokemon".
 ## Login y Tokens
 Para obtener un token y poder utilizar los servicios que solicitan autenticación primero debemos registrarnos con un super usuario para esto aplicamos el siguiente comando:
 ```
