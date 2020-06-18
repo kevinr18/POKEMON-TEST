@@ -1,5 +1,5 @@
 from .models import Regions, Pokemons, Sprites, Areas, Abilities, Moves, Types, PokemonsAbilities, PokemonsMoves
-from .models import PokemonsTypes, Stats, Storage, Locations
+from .models import PokemonsTypes, Stats, Storage, Locations, PokemonsAreas
 from rest_framework import serializers
 
 # ******* clase para serializar una relacion anidada de objeto  ******
@@ -29,34 +29,39 @@ class AreasListingField(serializers.RelatedField):
 
 class PokemonsListingField(serializers.RelatedField):
     def to_representation(self, value):
-        return PokemonsSerializer(value).data
+        return PokemonsSerializer(value.id_pokemons).data
 
 
 # ****** Serializers ********
 class AbilitiesSerializer(serializers.ModelSerializer):
     class Meta:
-        Model = Abilities
-        field = '__all__'
+        model = Abilities
+        fields = '__all__'
 
 class MovesSerializer(serializers.ModelSerializer):
     class Meta:
-        Model = Moves
-        field = '__all__'
+        model = Moves
+        fields = ['id', 'move']
 
 class TypesSerializer(serializers.ModelSerializer):
     class Meta:
-        Model = Types
-        field = '__all__'
+        model = Types
+        fields = '__all__'
     
 class StatsSerializer(serializers.ModelSerializer):
     class Meta:
-        Model = Stats
-        field = '__all__'
+        model = Stats
+        fields = '__all__'
 
 class PokemonsAbilitiesSerializer(serializers.ModelSerializer):
     class Meta:
         model = PokemonsAbilities
-        field = ['id_abilities', 'id_pokemons']
+        fields = ['id_abilities', 'id_pokemons']
+
+class PokemonsAreasSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PokemonsAreas
+        fields = '__all__'
 
 class PokemonsMovesSerializer(serializers.ModelSerializer):
     class Meta:
@@ -71,9 +76,9 @@ class PokemonsTypesSerializer(serializers.ModelSerializer):
 class SpritesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Sprites
-        fields = '__all__'
+        fields = ['back_default', 'front_default', 'back_shiny', 'back_shiny_female', 'back_female', 'front_shiny', 'front_shiny_female', 'front_female']
 
-class AreasSerializer(serializers.ModelSerializer):
+class AreasListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Areas
         fields = '__all__'
@@ -117,6 +122,11 @@ class LocationsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Locations
         fields = ['id', 'areas', 'name', 'id_regions']
+
+class LocationsListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Locations
+        fields = ['id', 'name', 'id_regions']
 
 class AreasSerializer(serializers.ModelSerializer):
     pokemons = PokemonsListingField(many = True, read_only =True)

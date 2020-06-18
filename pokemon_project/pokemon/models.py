@@ -22,7 +22,7 @@ class Areas(models.Model):
     id = models.BigAutoField(primary_key=True)
     id_locations = models.ForeignKey('Locations', models.DO_NOTHING, db_column='id_locations', related_name='areas')
     name = models.CharField(max_length=200)
-    location = models.CharField(max_length=200)
+    location = models.CharField(max_length=200, blank=True, null=True)
     pokemon_count = models.BigIntegerField(blank=True, null=True)
 
     class Meta:
@@ -50,8 +50,7 @@ class Moves(models.Model):
 
 class Pokemons(models.Model):
     id = models.BigAutoField(primary_key=True)
-    id_sprites = models.ForeignKey('Sprites', models.DO_NOTHING, db_column='id_sprites')
-    id_areas = models.ForeignKey(Areas, models.DO_NOTHING, db_column='id_areas', related_name='pokemons')
+    id_sprites = models.ForeignKey('Sprites', models.DO_NOTHING, db_column='id_sprites', blank=True, null=True)
     name = models.CharField(max_length=200)
     capture_rate = models.FloatField()
     color = models.CharField(max_length=200)
@@ -72,6 +71,15 @@ class PokemonsAbilities(models.Model):
     class Meta:
         managed = True
         db_table = 'pokemons_abilities'
+
+class PokemonsAreas(models.Model):
+    id = models.BigAutoField(primary_key=True)
+    id_areas = models.ForeignKey(Areas, models.DO_NOTHING, db_column='id_areas', related_name = 'pokemons')
+    id_pokemons = models.ForeignKey(Pokemons, models.DO_NOTHING, db_column='id_pokemons')
+
+    class Meta:
+        managed = True
+        db_table = 'pokemons_areas'
 
 
 class PokemonsMoves(models.Model):
@@ -105,7 +113,7 @@ class Regions(models.Model):
 
 class Sprites(models.Model):
     id = models.BigAutoField(primary_key=True)
-    back_default = models.CharField(max_length=200)
+    back_default = models.CharField(max_length=200, blank=True, null=True)
     front_default = models.CharField(max_length=200)
     back_shiny = models.CharField(max_length=200, blank=True, null=True)
     back_shiny_female = models.CharField(max_length=200, blank=True, null=True)

@@ -12,9 +12,14 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.permissions import AllowAny
 from rest_framework.authtoken.models import Token
 
-from .models import Pokemons, Storage, Regions, Locations, Areas
+from .models import Pokemons, Storage, Regions, Locations, Areas, Moves, Abilities, Types, Sprites, Stats, PokemonsMoves
+from .models import PokemonsAbilities, PokemonsAreas, PokemonsTypes
 from .serializer import PokemonsSerializer, StorageSerializer, StoragePostSerializer, RegionsSerializer, AreasSerializer
-from .serializer import LocationsSerializer , RegionsListSerializer
+from .serializer import LocationsSerializer , RegionsListSerializer, LocationsListSerializer, AreasListSerializer, MovesSerializer
+from .serializer import AbilitiesSerializer, TypesSerializer, SpritesSerializer, StatsSerializer, PokemonsMovesSerializer
+from .serializer import  PokemonsAreasSerializer, PokemonsTypesSerializer, PokemonsAbilitiesSerializer
+
+       
 
 # **** Vistas ****
 # Create your views here.
